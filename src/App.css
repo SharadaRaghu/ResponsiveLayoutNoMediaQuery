@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400, 700&display=swap');
+
+.App{
+
+  max-width: 85em; /*1366px*/
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+ul {
+  padding: 0;
+}
+
+@supports (display: grid) {
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14.375em, 1fr));
+  grid-gap: 2em;
+  
+}
+
+.responsive-grid li {
+  background-color: #fff;
+  border-radius: 0.125em;
+  height: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 0.188em 0.375em rgba(0,0,0,0.16), 0 0.188em 0.375em rgba(0,0,0,0.23);
+}
+}
